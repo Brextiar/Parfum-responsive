@@ -1,0 +1,140 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+    margin:0;
+    padding:0;
+  }
+  table {
+    border-collapse:collapse;
+    border-spacing:0;
+  }
+  fieldset,img {
+    border:0;
+  }
+  address,caption,cite,code,dfn,em,strong,th,var {
+    font-style:normal;
+    font-weight:normal;
+  }
+  ol,ul {
+    list-style:none;
+  }
+  caption,th {
+    text-align:left;
+  }
+  h1,h2,h3,h4,h5,h6 {
+    font-size:100%;
+    font-weight:normal;
+  }
+  q:before,q:after {
+    content:'';
+  }
+  abbr,acronym { border:0;
+  }
+
+  body,
+button,
+input,
+select,
+textarea {
+  color: #9797a0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  line-height: 16px;
+}
+body {
+    align-items: center;
+    background-color: #f4eae4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+main {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 5%;
+    width: 95%
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.img {
+    border-radius: 15px 15px 0 0;
+    height: 300px;
+    width: 100%;
+    background-image: url('./images/image-product-mobile.jpg');
+    background-position: center;
+    background-size: cover;
+    content: 'Photo du Parfum Chanel';
+}
+
+.infos {
+    margin: 20px;
+}
+
+h1 {
+    font-size: 1.5em;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.infos h2, .prix .PV {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 3em;
+    line-height: 1em;
+}
+
+.infos h2 {
+    color: black;
+    margin-top: 10px;
+}
+
+.infos p {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin-top: 15px;
+}
+
+.prix {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.prix .PV {
+    color: #3d8168;
+}
+
+.prix .PO {
+    font-size: 1em;
+    text-decoration: line-through;
+}
+
+.ajoutpanier {
+    align-items: center;
+    border-radius: 10px;
+    background-color: #3d8168;
+    color: white;
+    display: flex;
+    font-size: 1.3em;
+    font-weight: 700;
+    gap: 5px;
+    height: 50px;
+    justify-content: center;
+    margin-top: 15px;
+    width: 100%;
+}
+
+@media (min-width: 376px) {
+    main {
+        width: 375px;
+    }
+}
