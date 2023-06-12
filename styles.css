@@ -66,11 +66,8 @@ main {
 .img {
     border-radius: 15px 15px 0 0;
     height: 300px;
+    object-fit: cover;
     width: 100%;
-    background-image: url('./images/image-product-mobile.jpg');
-    background-position: center;
-    background-size: cover;
-    content: 'Photo du Parfum Chanel';
 }
 
 .infos {
@@ -137,4 +134,26 @@ h1 {
     main {
         width: 375px;
     }
+}
+
+@media (min-width: 751px) {
+
+    .container {
+        flex-direction: row;
+        height: 450px;
+        width: 600px;
+       
+    }
+
+    .img {
+        height: 100%;
+        border-radius: 15px 0 0 15px;   
+        
+    }
+    .infos {
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+    }
+
 }
